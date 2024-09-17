@@ -1,0 +1,89 @@
+    9  git --version
+   10  git --version
+   11  git --version
+   12  git config --global user.name "Devan Gwynn"
+   13  git config -- global user.email devangwynn@gmail.com
+   14  git config -- global user.email wee_who@hotmail.com
+   15  git config --global user.email devangwynn@gmail.com
+   16  git config --global init.defaultBranch main
+   17  git --version
+   18  git config --list
+   30  mkdir git-practice-ThunderUp2002
+   31  cd git-practice-ThunderUp2002
+   32  git init
+   34  git status
+   43  cd git-practice-ThunderUp2002
+   46  git status
+   48  git add file1.txt
+   49  git status
+   50  git commit -m "Add file1.txt"
+   51  git add .
+   52  git status
+   53  git commit -m "Add file2.txt"
+   54  git status
+   55  git log
+   56  git log --oneline
+   57  touch .gitignore
+   58  git add .
+   59  git commit -m "Add gitignore"
+   60  git remote -v
+   83  mkdir git-practice-ThunderUp2002
+   84  cd git-practice-ThunderUp2002
+   85  git init
+   87  git status
+   90  git status
+   91  git add .
+   92  git status
+   93  git commit -m "create new files"
+   94  git status
+   95  git log
+   96  git status
+   97  git add file_1.txt
+   98  git commit -m "Write first line"
+   99  git status
+  100  git add file_2.txt
+  101  git commit -m "Write first line"
+  102  git log
+  104  git add Readme.md
+  105  git commit -m "Create Readme file"
+  106  touch .gitignore
+  107  git add .gitignore
+  108  git commit -m "Create .gitignore file"
+  110  git status
+  111  git status
+  112  git branch features
+  113  git checkout features
+  114  git log
+  116  git add new_features.txt
+  117  git commit -m "add empty file"
+  118  git add .
+  119  git commit -m "Insert description of new features"
+  120  git checkout main
+  122  git commit -a -m "Add line to file_1.txt"
+  123  git log
+  124  git merge features
+  125  git log
+  126  git commit -a -m "Update features description"
+  127  git checkout features
+  128  git commit -a -m "Update features description"
+  129  git checkout main
+  130  git merge features
+  131  git commit -a -m "Merge new_features.txt files from features branch with main branch"
+  132  git status
+  133  git log
+  134  git branch -d features
+  135  git remote add origin git@github.com:ThunderUp2002/git-practice-ThunderUp2002.git
+  136  git push -u origin main
+  148  git clone git@github.com:ThunderUp2002/git-practice-evandrewer.git
+  150  cd git-practice-evandrewer
+  151  git branch feature-ThunderUp2002
+  152  git checkout feature-ThunderUp2002
+  154  git commit -a -m "Create new file"
+  155  git add new_file.txt
+  156  git commit -m "Create new file"
+  157  git push origin feature-ThunderUp2002
+  158  git pull
+  160  cd git-practice-ThunderUp2002
+  161  git pull
+  163  git log --oneline > gitlog.txt
+  164  history | grep git > history.txt
